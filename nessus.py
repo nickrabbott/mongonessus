@@ -89,13 +89,13 @@ class Nessus:
         return requests.request("GET", url, headers=self.headers, verify=False)
 
     def full_download(self, id):
-        export_response = self.export_scan(8)
-        export_status = self.export_status(8, export_response["file"])
+        export_response = self.export_scan(id)
+        export_status = self.export_status(id, export_response["file"])
         while export_status['status'] != "ready":
             time.sleep(2)
-            export_status = self.export_status(8, export_response["file"])
+            export_status = self.export_status(id, export_response["file"])
 
-        return self.export_download(8, export_response["file"])
+        return self.export_download(id, export_response["file"])
 
 
 if __name__ == '__main__':
