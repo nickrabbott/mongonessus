@@ -1,4 +1,4 @@
-# MongoNessus
+# MongoNessus :leaves:
 Automate the export and import of Nessus scan info into MongoDB. You'll need a working [Nessus Vulnerability Scanner](https://www.tenable.com/) and [MongoDB](https://www.mongodb.com/) instance.
 
 
