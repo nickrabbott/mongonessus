@@ -11,7 +11,7 @@ pip install pymongo
 pip install pandas
 ```
 
-Create secrets.py and include the following.
+Create secrets.py and include the following. Be sure to fill in the values.
 ```python
 # secrets.py
 secrets = {
