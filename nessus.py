@@ -116,5 +116,5 @@ if __name__ == '__main__':
 
         data_frame = pandas.read_csv(filename)
         data = data_frame.to_dict(orient = "records")
-        collection = db[filename]
+        collection = db[scan["name"]]
         collection.insert_many(data)
