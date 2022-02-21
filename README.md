@@ -32,3 +32,7 @@ __pycache__/
 ```bash
 python3 nessus.py
 ```
+## Contributing
+Feel free to fork this repo or submit a pull request
+## License
+[MIT](LICENSE)
